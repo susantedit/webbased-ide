@@ -4,7 +4,7 @@
   <img src="public/logo.png" alt="VibeForge Logo" width="120" />
 </p>
 
-<p align="center">
+<p align="center">  
   <strong>A blazing-fast, in-browser full-stack cloud IDE powered by Next.js 15, WebContainers, Monaco Editor, and Multi-Provider AI (Groq, Gemini, Grok, GPT, Claude, and Ollama).</strong>
 </p>
 
