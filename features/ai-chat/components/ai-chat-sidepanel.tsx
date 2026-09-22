@@ -914,12 +914,12 @@ export const AIChatSidePanel: React.FC<AIChatSidePanelProps> = ({
           <div className="shrink-0 border-b border-zinc-800 bg-zinc-900/80 backdrop-blur-sm">
             <div className="flex items-center justify-between p-6">
               <div className="flex items-center gap-3">
-                <div className="relative w-10 h-10 border rounded-full flex flex-col justify-center items-center">
-                  <Image src={"/logo.svg"} alt="Logo" width={28} height={28} />
+                <div className="relative w-10 h-10 border border-zinc-800 rounded-full flex flex-col justify-center items-center bg-zinc-950 overflow-hidden">
+                  <Image src="/logo.png" alt="VibeForge Logo" width={26} height={26} className="object-contain" />
                 </div>
                 <div>
                   <h2 className="text-lg font-semibold text-zinc-100">
-                    Enhanced AI Assistant
+                    VibeForge AI
                   </h2>
                   <p className="text-sm text-zinc-400">
                     {activeFileName

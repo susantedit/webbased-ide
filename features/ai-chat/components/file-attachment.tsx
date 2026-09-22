@@ -543,7 +543,7 @@ export const FileAttachmentChat: React.FC<FileAttachmentChatProps> = ({ isOpen, 
           <div className="flex items-center justify-between p-6">
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10 border rounded-full flex flex-col justify-center items-center">
-                <Image src={"/logo.svg"} alt="Logo" width={28} height={28} />
+                <Image src={"/logo.png"} alt="VibeForge Logo" width={28} height={28} className="object-contain" />
               </div>
               <div>
                 <h2 className="text-lg font-semibold text-zinc-100">AI Code Assistant</h2>
@@ -587,8 +587,8 @@ export const FileAttachmentChat: React.FC<FileAttachmentChatProps> = ({ isOpen, 
           <div className="p-6 space-y-6">
             {messages.length === 0 && !isLoading && (
               <div className="text-center text-zinc-500 py-16">
-                <div className="relative w-16 h-16 border rounded-full flex flex-col justify-center items-center mx-auto mb-4">
-                  <Image src={"/logo.svg"} alt="Logo" width={32} height={32} />
+                <div className="relative w-16 h-16 border border-zinc-800 rounded-full flex flex-col justify-center items-center mx-auto mb-4 bg-zinc-900 overflow-hidden">
+                  <Image src={"/logo.png"} alt="VibeForge Logo" width={36} height={36} className="object-contain" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-zinc-300">AI Code Assistant</h3>
                 <p className="text-zinc-400 max-w-md mx-auto leading-relaxed mb-6">
@@ -621,7 +621,7 @@ export const FileAttachmentChat: React.FC<FileAttachmentChatProps> = ({ isOpen, 
                 >
                   {msg.role === "assistant" && (
                     <div className="relative w-10 h-10 border rounded-full flex flex-col justify-center items-center">
-                      <Image src={"/logo.svg"} alt="Logo" width={28} height={28} />
+                      <Image src={"/logo.png"} alt="VibeForge Logo" width={28} height={28} className="object-contain" />
                     </div>
                   )}
 
@@ -677,7 +677,7 @@ export const FileAttachmentChat: React.FC<FileAttachmentChatProps> = ({ isOpen, 
             {isLoading && (
               <div className="flex items-start gap-4 justify-start">
                 <div className="relative w-10 h-10 border rounded-full flex flex-col justify-center items-center">
-                  <Image src={"/logo.svg"} alt="Logo" width={28} height={28} />
+                  <Image src={"/logo.png"} alt="VibeForge Logo" width={28} height={28} className="object-contain" />
                 </div>
                 <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800/50 p-5 rounded-xl rounded-bl-md flex items-center gap-3">
                   <Loader2 className="h-4 w-4 animate-spin text-blue-400" />
