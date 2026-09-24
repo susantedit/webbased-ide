@@ -28,13 +28,13 @@ export default auth((req) => {
 
   if (isAuthRoute) {
     if (isLoggedIn) {
-      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, req.url));
     }
     return null;
   }
 
   if(!isLoggedIn && !isPublicRoute){
-    return Response.redirect(new URL("/auth/sign-in" , nextUrl))
+    return Response.redirect(new URL("/auth/sign-in" , req.url))
   }
 
   return null
