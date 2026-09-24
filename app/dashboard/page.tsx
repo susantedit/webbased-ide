@@ -25,7 +25,7 @@ const DashboardMainPage = async () => {
         {playgrounds && playgrounds.length === 0 ? (
           <EmptyState />
         ) : (
-          // @ts-ignore
+          // @ts-expect-error project type mismatch
           <ProjectTable
             projects={playgrounds || []}
             onDeleteProject={deleteProjectById}

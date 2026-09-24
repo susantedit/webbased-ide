@@ -45,7 +45,6 @@ import { useFileExplorer } from "@/features/playground/hooks/useFileExplorer";
 import { usePlayground } from "@/features/playground/hooks/usePlayground";
 import { useAISuggestions } from "@/features/playground/hooks/useAISuggestion";
 import { useWebContainer } from "@/features/webcontainers/hooks/useWebContainer";
-import { SaveUpdatedCode } from "@/features/playground/actions";
 import { TemplateFolder } from "@/features/playground/types";
 import { findFilePath } from "@/features/playground/libs";
 import { ConfirmationDialog } from "@/features/playground/components/dialogs/conformation-dialog";
