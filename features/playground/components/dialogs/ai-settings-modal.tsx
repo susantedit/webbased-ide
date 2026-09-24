@@ -170,7 +170,8 @@ export function AISettingsModal({ isOpen, onClose }: AISettingsModalProps) {
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <>
+      <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-2xl bg-zinc-950 border-zinc-800 text-zinc-100">
         <DialogHeader>
           <div className="flex items-center justify-between pr-4">
